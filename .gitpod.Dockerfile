@@ -30,8 +30,13 @@ RUN mkdir -p /home/gitpod/.swift && \
     curl -fsSL https://swift.org/builds/swift-5.2-release/ubuntu1804/swift-5.2-RELEASE/swift-5.2-RELEASE-ubuntu18.04.tar.gz | tar -xzv
 ENV PATH="$PATH:/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin"
 
-# Install  jakeheis / Ice
+# Install jakeheis / Ice
 RUN mkdir -p $HOME/ice && git clone https://github.com/jakeheis/Ice $HOME/ice
 WORKDIR $HOME/ice
 RUN swift build -c release
 RUN sudo cp -f $HOME/ice/.build/release/ice /usr/local/bin
+
+# Install vknabel / sourcekite
+RUN mkdir -p $HOME/sourcekite && git clone https://github.com/vknabel/sourcekite $HOME/sourcekite
+WORKDIR $HOME/sourcekite
+RUN make install PREFIX=/usr/local
