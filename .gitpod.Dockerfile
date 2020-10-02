@@ -32,4 +32,4 @@ ENV PATH="$PATH:/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin"
 
 # Install  jakeheis / Ice
 RUN git clone https://github.com/jakeheis/Ice
-RUN cd Ice && swift build -c release
+RUN cd Ice && swift build -c release && install .build/release/ice /usr/local/bin
