@@ -9,10 +9,9 @@
         "coveredGutterStyle": "blockblue",
         "uncoveredGutterStyle": "slashyellow"
     },
-    "sourcekit-lsp.toolchainPath": "",
+    "sourcekit-lsp.toolchainPath": "siurcekite",
+    "sde.languageServerMode": "sourcekit-lsp",
+    "swift.languageServerPath": "",
     "swift.path.swift_driver_bin": "/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin/swift",
-    "swift.targets": [
-        "swift-cloud-kit",
-        "swift-cloud-kitTests"
-    ]
+    "swift.targets": []
 }
