@@ -1,7 +1,7 @@
 import XCTest
 
-import swift_cloud_kitTests
+import swift_cli_boilerplateTests
 
 var tests = [XCTestCaseEntry]()
-tests += swift_cloud_kitTests.allTests()
+tests += swift_cli_boilerplateTests.allTests()
 XCTMain(tests)
