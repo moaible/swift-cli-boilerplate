@@ -34,4 +34,4 @@ ENV PATH="$PATH:/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin"
 RUN mkdir -p $HOME/ice && git clone https://github.com/jakeheis/Ice $HOME/ice
 WORKDIR $HOME/ice
 RUN swift build -c release
-ENV PATH="$PATH:/home/gitpod/ice/.build/release/ice"
+RUN sudo cp -f /home/gitpod/ice/.build/release/ice /usr/local/bin
