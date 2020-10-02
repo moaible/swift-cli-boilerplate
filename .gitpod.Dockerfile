@@ -35,7 +35,3 @@ RUN mkdir -p $HOME/ice && git clone https://github.com/jakeheis/Ice $HOME/ice
 WORKDIR $HOME/ice
 RUN swift build -c release
 RUN sudo cp -f $HOME/ice/.build/release/ice /usr/local/bin
-
-ARG USERNAME=me
-ARG USER_UID=1000
-ARG USER_GID=$USER_UID
