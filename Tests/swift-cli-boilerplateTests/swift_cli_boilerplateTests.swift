@@ -1,7 +1,7 @@
 import XCTest
 import class Foundation.Bundle
 
-final class swift_cloud_kitTests: XCTestCase {
+final class swift_cli_boilerplateTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
@@ -12,7 +12,7 @@ final class swift_cloud_kitTests: XCTestCase {
             return
         }
 
-        let fooBinary = productsDirectory.appendingPathComponent("swift-cloud-kit")
+        let fooBinary = productsDirectory.appendingPathComponent("swift-cli-boilerplate")
 
         let process = Process()
         process.executableURL = fooBinary

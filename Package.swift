@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-cloud-kit",
+    name: "swift-cli-boilerplate",
     dependencies: [
         .package(url: "https://github.com/jakeheis/SwiftCLI", from: "6.0.2"),
     ],
     targets: [
-        .target(name: "swift-cloud-kit", dependencies: ["SwiftCLI"]),
-        .testTarget(name: "swift-cloud-kitTests", dependencies: ["swift-cloud-kit"]),
+        .target(name: "swift-cli-boilerplate", dependencies: ["SwiftCLI"]),
+        .testTarget(name: "swift-cli-boilerplateTests", dependencies: ["swift-cli-boilerplate"]),
     ]
 )

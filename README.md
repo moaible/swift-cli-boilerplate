@@ -1,1 +1,2 @@
-# swift-cloud-kit
+# swift-cli-boilerplate
+
