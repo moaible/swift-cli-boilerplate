@@ -31,7 +31,7 @@ RUN mkdir -p /home/gitpod/.swift && \
 ENV PATH="$PATH:/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin"
 
 # Install  jakeheis / Ice
-RUN git clone https://github.com/jakeheis/Ice /workspace/ice
+RUN mkdir -p /workspace/ice && git clone https://github.com/jakeheis/Ice /workspace/ice
 WORKDIR /workspace/ice
 RUN swift build -c release
 ENV PATH="$PATH:/workspace/ice"
