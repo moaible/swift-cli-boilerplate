@@ -39,4 +39,5 @@ RUN sudo cp -f $HOME/ice/.build/release/ice /usr/local/bin
 # Install vknabel / sourcekite
 RUN mkdir -p $HOME/sourcekite && git clone https://github.com/vknabel/sourcekite $HOME/sourcekite
 WORKDIR $HOME/sourcekite
-#RUN sudo make install PREFIX=/usr/local
+RUN swift build -c release
+RUN sudo cp -f $HOME/sourcekite/.build/release/sourcekite /usr/local/bin
