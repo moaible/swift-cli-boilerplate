@@ -29,3 +29,7 @@ RUN mkdir -p /home/gitpod/.swift && \
     cd /home/gitpod/.swift && \
     curl -fsSL https://swift.org/builds/swift-5.2-release/ubuntu1804/swift-5.2-RELEASE/swift-5.2-RELEASE-ubuntu18.04.tar.gz | tar -xzv
 ENV PATH="$PATH:/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin"
+
+# Install  jakeheis / Ice
+RUN git clone https://github.com/jakeheis/Ice
+RUN cd Ice && swift build -c release
