@@ -4,7 +4,8 @@
 
 ## How to use
 
-1. open Gitpod link
-2. Please 'make rename-project' command
+1. Use this template
+2. open Gitpod link
+3. Please 'make rename-project' command
     - $ make name=SomeProject rename-project
-3. updated git ✅
+4. updated git ✅
