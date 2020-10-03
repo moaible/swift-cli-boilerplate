@@ -9,7 +9,7 @@
         "coveredGutterStyle": "blockblue",
         "uncoveredGutterStyle": "slashyellow"
     },
-    "sourcekit-lsp.toolchainPath": "siurcekite",
+    "sourcekit-lsp.toolchainPath": "sourcekite",
     "sde.languageServerMode": "sourcekit-lsp",
     "swift.languageServerPath": "",
     "swift.path.swift_driver_bin": "/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin/swift",
