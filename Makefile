@@ -28,6 +28,7 @@ rename-project:
 	sed -i -e "s/${TARGET}/${RENAMED_NAME}/" ${README}
 	sed -i -e "s/${TARGET}/${RENAMED_NAME}/" ${README}
 	sed -i -e "s/${TARGET}/${RENAMED_NAME}/" ${PACKAGE_FILE}
+	sed -i -e "s/${TARGET}/${RENAMED_NAME}/" ${PACKAGE_FILE}
 	sed -i -e "s/${TARGET_BY_DEFINE}Tests:/${RENAMED_NAME_BY_DEFINE}Tests:/" ${MAIN_TEST_FILE}
 	sed -i -e "s/\"${TARGET}\"/\"${RENAMED_NAME}\"/" ${LINUX_MAIN_TEST_FILE}
 	sed -i -e "s/${TARGET_BY_DEFINE}/${RENAMED_NAME_BY_DEFINE}/" ${LINUX_MAIN_TEST_FILE}
