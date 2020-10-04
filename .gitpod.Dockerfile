@@ -31,13 +31,15 @@ RUN mkdir -p /home/gitpod/.swift && \
 ENV PATH="$PATH:/home/gitpod/.swift/swift-5.2-RELEASE-ubuntu18.04/usr/bin"
 
 # Install jakeheis / Ice
+WORKDIR $HOME
 RUN mkdir -p $HOME/ice && git clone https://github.com/jakeheis/Ice $HOME/ice
 WORKDIR $HOME/ice
 RUN swift build -c release
 RUN sudo cp -f $HOME/ice/.build/release/ice /usr/local/bin
 
 # Install vknabel / sourcekite
+WORKDIR $HOME
 RUN mkdir -p $HOME/sourcekite && git clone https://github.com/vknabel/sourcekite $HOME/sourcekite
-WORKDIR $HOME/sourcekite
+WORKDIR $HOME/sourcekite 
 RUN swift build -c release
 RUN sudo cp -f $HOME/sourcekite/.build/release/sourcekite /usr/local/bin

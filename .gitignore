@@ -5,6 +5,7 @@
 ## Local files
 core.git.*
 core.sourcekit-lsp.*
+core.swift-build.*
 
 ## User settings
 xcuserdata/
