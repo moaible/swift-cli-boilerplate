@@ -7,5 +7,9 @@
 1. Use this template
 2. open Gitpod link
 3. Please 'make rename-project' command
-    - $ make name=SomeProject rename-project
+
+    ```
+    $ make name=SomeProject rename-project
+    ```
+
 4. updated git ✅
